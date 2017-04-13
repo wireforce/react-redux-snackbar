@@ -1,0 +1,6 @@
+.env
+.idea
+.log
+.tmp
+dist
+node_modules
