@@ -1,6 +1,6 @@
-# react-redux-snackbar
-A snackbar (displays toasts) for reactjs, using the redux state container.
-Follows the [material design guidelines](https://material.io/guidelines/components/snackbars-toasts.html)
+# react-redux-snackbar [![Gemnasium](https://img.shields.io/gemnasium/mathiasbynens/he.svg)]() [![gzipped size](https://img.shields.io/badge/gzipped-2.5kb-brightgreen.svg)]()
+A snackbar (displays toasts) for reactjs, using the redux state container. Follows the [material design guidelines](https://material.io/guidelines/components/snackbars-toasts.html).
+Its flexible and customizable at less than 2.5kB gzipped, and has no dependencies (other than that you must use React and Redux in your app of course).
 
 ## Install
 
@@ -56,6 +56,7 @@ dispatch(showSnack('myUniqueId', {
 // Should you want to remove it programatically:
 
 dispatch(dismissSnack('myUniqueId'));
-
 ```
+## More docs coming soon
 
+### [Changelog](CHANGELOG.md)
