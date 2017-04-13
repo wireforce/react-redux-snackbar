@@ -43,7 +43,7 @@ function getTransitionStyles(elem, largeScreen, visible, theming) {
 	if (elem === 'snack') {
 		if (visible) {
 			const small = `translate(${(theming.transitionToXY || {}).smallScreen || '0, 0'})`;
-			const large = `translate(${(theming.transitionToXY || {}).largeScreen || '-50%, 0'}))`;
+			const large = `translate(${(theming.transitionToXY || {}).largeScreen || '-50%, 0'})`;
 			return {
 				transform: largeScreen ? large : small,
 			};

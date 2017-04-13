@@ -42,7 +42,6 @@ class Snackbar extends React.Component {
 			this.setState({ snack, visible: false });
 			setTimeout(() => {
 				this.setState({ visible: true });
-				this.gaTrack(snack, 'show');
 				if (snack.data.timeout) {
 					this.snackTimer = setTimeout(() => {
 						this.props.dispatch(dismissSnack(snack.id));
@@ -53,6 +52,9 @@ class Snackbar extends React.Component {
 	};
 
 	hideSnack = () => {
+		if (!this.state.snack) {
+			return Promise.resolve();
+		}
 		return new Promise((resolve) => {
 			this.clearDismissTimer();
 			this.setState({ visible: false });
@@ -125,6 +127,4 @@ class Snackbar extends React.Component {
 
 }
 
-export default connect(state => ({
-	snack: ((state.snackbar || {}).queue || [])[0] || null,
-}))(Snackbar);
+export default connect(state => ({ snack: state.snackbar.queue[0] || null }))(Snackbar);

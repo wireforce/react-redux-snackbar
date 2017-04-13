@@ -6,8 +6,8 @@ import { actionTypes } from './snackbarReducer';
  * dispatch(showSnack('myUniqueId', {
  * 	   label: 'Yay, there is a new version. Please reload the page to update',
  * 	   timeout: 5000,
- * 	   button: { label: 'RELOAD', action: 'redirect', href:  }
- * });
+ * 	   button: { label: 'RELOAD', action: 'redirect', href: window.location.href }
+ * }));
  *
  * @param {String} id
  * @param {Object} data
