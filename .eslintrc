@@ -1,0 +1,33 @@
+{
+	"parser": "babel-eslint",
+	"env": {
+		"browser": true
+	},
+	"extends": "airbnb-base",
+	"rules": {
+		"indent": [
+			"error",
+			"tab"
+		],
+		"no-mixed-spaces-and-tabs": [
+			"error",
+			"smart-tabs"
+		],
+		"max-len": [
+			"error",
+			{
+				"code": 120,
+				"ignoreUrls": true,
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true,
+				"ignoreComments": true
+			}
+		],
+		"no-tabs": "off",
+		"global-require": "off",
+		"comma-dangle": "off",
+		"prefer-template": "off",
+		"no-trailing-spaces": "off",
+		"arrow-body-style": "off"
+	}
+}

@@ -1,0 +1,55 @@
+{
+  "name": "react-redux-snackbar",
+  "version": "0.9.0",
+  "description": "A snackbar (displays toasts) for reactjs, using the redux state container",
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
+  "jsnext:main": "./src/index.js",
+  "author": "wireforce <wireforce@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": "https://github.com/wireforce/react-redux-snackbar.git",
+  "bugs": {
+    "url": "https://github.com/wireforce/react-redux-snackbar/issues"
+  },
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "keywords": [
+    "react redux snackbar",
+    "react",
+    "redux",
+    "reactjs",
+    "snackbar",
+    "toaster",
+    "toasts",
+    "toast messages",
+    "material design"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-preset-babili": "^0.0.12",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0"
+  }
+}
